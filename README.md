@@ -5,7 +5,7 @@
 * Bullet
 * Another Buller
 
--[] Task 1
--[] Task 2
+-[ ] Task 1
+-[ ] Task 2
 
 > Block Quotes is also supported

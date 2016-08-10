@@ -13,18 +13,22 @@ fi
 echo "\nPlease install now public key at github/setting\n"
 cat $PUBLIC_KEYFILE
 
-echo "Press Enter when ready"
-read 
+read -p "\nPress Enter to continue ..."
 
-echo "Now Adding key to authentication agent" 
-echo ssh-add $PRIVATE_KEYFILE 
-if [[ $? -ne 0 ]]
+read -p "Shall I add the key file to authentication agent yes/no? > "
+if [[ $REPLY == "y*" ]]
 then
-    echo "error adding key to authenticaiton agent"
-    exit 1
+  ssh-add $PRIVATE_KEYFILE 
+  if [[ $? -ne 0 ]]
+  then
+      echo "error adding key to authenticaiton agent"
+      exit 1
+  fi
 fi
 
 echo "Executing access test using git user" 
 
 ssh -vT git@github.com
 
+echo "Pleas make sure to use the git@github.com/repository.git\n\
+in order to access repositoy. Yor user name will not work!"

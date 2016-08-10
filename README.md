@@ -6,7 +6,7 @@
 
 **add keyfile to the authentication agent** 
 
-The agent will ask for the pass phrase is file is protiected using a passphrase
+> Note: The agent will ask for the pass phrase if the key-file is protiected using a passphrase
 
     $ ssh-add id_rsa 
 
@@ -21,4 +21,3 @@ Paste the public key to the ssh setting
 **Make sure to use git user**
 
     $ git remote set-url origin git@github.com:
-

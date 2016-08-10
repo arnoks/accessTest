@@ -6,7 +6,7 @@
 
 **add keyfile to the authentication agent** 
 
-> Note: The agent will ask for the pass phrase if the key-file is protiected using a passphrase
+> Note: The agent will ask for the passphrase if the key-file is protected using a passphrase
 
     $ ssh-add id_rsa 
 

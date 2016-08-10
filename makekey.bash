@@ -30,5 +30,5 @@ echo "Executing access test using git user"
 
 ssh -vT git@github.com
 
-echo "Pleas make sure to use the git@github.com/repository.git\n\
+echo "Please make sure to use the git@github.com/repository.git\n\
 in order to access repositoy. Yor user name will not work!"
